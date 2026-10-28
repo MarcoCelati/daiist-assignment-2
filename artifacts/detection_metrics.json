@@ -1,0 +1,220 @@
+{
+  "finetuned": {
+    "conf": 0.62,
+    "per_class": [
+      {
+        "class": "helmet",
+        "test_instances": 195,
+        "predictions": 105,
+        "precision": 0.9619047619047619,
+        "recall": 0.517948717948718,
+        "AP50": 0.9038421637146482,
+        "AP50-95": 0.507809578202842
+      },
+      {
+        "class": "no-helmet",
+        "test_instances": 24,
+        "predictions": 1,
+        "precision": 1.0,
+        "recall": 0.041666666666666664,
+        "AP50": 0.616676941284524,
+        "AP50-95": 0.2602147080386906
+      },
+      {
+        "class": "no-vest",
+        "test_instances": 61,
+        "predictions": 38,
+        "precision": 0.7894736842105263,
+        "recall": 0.4918032786885246,
+        "AP50": 0.6592083441522977,
+        "AP50-95": 0.29180943883044824
+      },
+      {
+        "class": "person",
+        "test_instances": 214,
+        "predictions": 208,
+        "precision": 0.8846153846153846,
+        "recall": 0.8598130841121495,
+        "AP50": 0.8856186751974853,
+        "AP50-95": 0.5864767995557677
+      },
+      {
+        "class": "vest",
+        "test_instances": 129,
+        "predictions": 97,
+        "precision": 0.8865979381443299,
+        "recall": 0.6666666666666666,
+        "AP50": 0.8639275771473153,
+        "AP50-95": 0.4977825840144644
+      }
+    ],
+    "mAP50": 0.7858547402992541,
+    "mAP50-95": 0.42881862172844254,
+    "image_level": {
+      "roc_auc": 0.9032258064516129,
+      "average_precision": 0.8678819161251305
+    },
+    "confusion_matrix": [
+      [
+        101,
+        0,
+        0,
+        0,
+        0,
+        94
+      ],
+      [
+        0,
+        1,
+        0,
+        0,
+        0,
+        23
+      ],
+      [
+        0,
+        0,
+        30,
+        3,
+        1,
+        27
+      ],
+      [
+        1,
+        0,
+        0,
+        184,
+        0,
+        29
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        86,
+        43
+      ],
+      [
+        3,
+        0,
+        8,
+        21,
+        10,
+        0
+      ]
+    ]
+  },
+  "zero_shot": {
+    "conf": 0.01,
+    "per_class": [
+      {
+        "class": "helmet",
+        "test_instances": 195,
+        "predictions": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "AP50": 0.0,
+        "AP50-95": 0.0
+      },
+      {
+        "class": "no-helmet",
+        "test_instances": 24,
+        "predictions": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "AP50": 0.0,
+        "AP50-95": 0.0
+      },
+      {
+        "class": "no-vest",
+        "test_instances": 61,
+        "predictions": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "AP50": 0.0,
+        "AP50-95": 0.0
+      },
+      {
+        "class": "person",
+        "test_instances": 214,
+        "predictions": 919,
+        "precision": 0.2252448313384113,
+        "recall": 0.9672897196261683,
+        "AP50": 0.8459153602146735,
+        "AP50-95": 0.4620807813540958
+      },
+      {
+        "class": "vest",
+        "test_instances": 129,
+        "predictions": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "AP50": 0.0,
+        "AP50-95": 0.0
+      }
+    ],
+    "mAP50": 0.1691830720429347,
+    "mAP50-95": 0.09241615627081916,
+    "image_level": {
+      "roc_auc": 0.5,
+      "average_precision": 0.3749353785345488
+    }
+  },
+  "trivial": {
+    "conf": 0.62,
+    "per_class": [
+      {
+        "class": "helmet",
+        "test_instances": 195,
+        "predictions": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "AP50": 0.0,
+        "AP50-95": 0.0
+      },
+      {
+        "class": "no-helmet",
+        "test_instances": 24,
+        "predictions": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "AP50": 0.0,
+        "AP50-95": 0.0
+      },
+      {
+        "class": "no-vest",
+        "test_instances": 61,
+        "predictions": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "AP50": 0.0,
+        "AP50-95": 0.0
+      },
+      {
+        "class": "person",
+        "test_instances": 214,
+        "predictions": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "AP50": 0.0,
+        "AP50-95": 0.0
+      },
+      {
+        "class": "vest",
+        "test_instances": 129,
+        "predictions": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "AP50": 0.0,
+        "AP50-95": 0.0
+      }
+    ],
+    "mAP50": 0.0,
+    "mAP50-95": 0.0,
+    "image_level": {
+      "roc_auc": 0.5,
+      "average_precision": 0.3749353785345488
+    }
+  }
+}

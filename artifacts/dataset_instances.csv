@@ -1,0 +1,16 @@
+split,class,instances,images_containing
+train,helmet,2116,938
+train,no-helmet,94,49
+train,no-vest,741,390
+train,person,2362,986
+train,vest,1073,504
+val,helmet,232,117
+val,no-helmet,11,6
+val,no-vest,90,52
+val,person,241,115
+val,vest,141,74
+test,helmet,195,82
+test,no-helmet,24,11
+test,no-vest,61,31
+test,person,214,88
+test,vest,129,57

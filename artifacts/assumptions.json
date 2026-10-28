@@ -1,0 +1,20 @@
+{
+  "cost_fp": 5.0,
+  "cost_fn": 25.0,
+  "cost_tp": 0.0,
+  "cost_tn": 0.0,
+  "base_rate": 0.05,
+  "daily_volume": 1200.0,
+  "review_minutes": 0.5,
+  "reviewer_hourly_cost": 25.0,
+  "productive_hours": 5.0,
+  "reviewers_available": 1.0,
+  "reviewer_miss_rate": 0.0,
+  "reviewer_false_alarm_rate": 0.0,
+  "review_cost_per_case": 0.20833333333333334,
+  "labels": [
+    "Pass",
+    "Human review",
+    "Fail"
+  ]
+}

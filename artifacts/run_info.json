@@ -1,0 +1,34 @@
+{
+  "created": "2026-10-28T15:37:51+00:00",
+  "dataset": {
+    "workspace": "roboflow-100",
+    "project": "construction-safety-gsnvb",
+    "version": 1,
+    "url": "https://universe.roboflow.com/roboflow-100/construction-safety-gsnvb/dataset/1"
+  },
+  "classes": [
+    "helmet",
+    "no-helmet",
+    "no-vest",
+    "person",
+    "vest"
+  ],
+  "positive_classes": [
+    "no-vest"
+  ],
+  "coco_to_dataset": {
+    "person": "person"
+  },
+  "training": {
+    "model": "yolo11n",
+    "epochs_max": 50,
+    "epochs_run": 50,
+    "imgsz": 640,
+    "batch": 16,
+    "patience": 15,
+    "seed": 0,
+    "device": "Tesla T4",
+    "minutes": 13.6
+  },
+  "python": "3.12.13"
+}

@@ -1,0 +1,243 @@
+{
+  "threshold": 0.62,
+  "threshold_source": "sweep minimum",
+  "band": [
+    0.02,
+    0.79
+  ],
+  "band_source": "sweep minimum within reviewer capacity",
+  "band_ignoring_capacity": [
+    0.02,
+    0.79
+  ],
+  "band_ignoring_capacity_outcome": {
+    "cost_per_1000": 146.07253508292325,
+    "error_cost_per_1000": 80.64516129032258,
+    "review_cost_per_1000": 65.42737379260069,
+    "tp": 46.7741935483871,
+    "fn": 3.225806451612903,
+    "fp": 0.0,
+    "tn": 950.0,
+    "review_share": 0.3140513942044833,
+    "reviews_per_day": 376.86167304538,
+    "reviewers_needed": 0.6281027884089666,
+    "pos_pass": 3.225806451612903,
+    "pos_review": 40.322580645161295,
+    "pos_fail": 6.451612903225806,
+    "neg_pass": 676.271186440678,
+    "neg_review": 273.728813559322,
+    "neg_fail": 0.0,
+    "recall_auto": 0.12903225806451613,
+    "false_alarm_rate_auto": 0.0
+  },
+  "strategies": {
+    "Do nothing (pass everything)": {
+      "cost_per_1000": 1250.0,
+      "error_cost_per_1000": 1250.0,
+      "review_cost_per_1000": 0.0,
+      "tp": 0.0,
+      "fn": 50.0,
+      "fp": 0.0,
+      "tn": 950.0,
+      "review_share": 0.0,
+      "reviews_per_day": 0.0,
+      "reviewers_needed": 0.0,
+      "pos_pass": 50.0,
+      "pos_review": 0.0,
+      "pos_fail": 0.0,
+      "neg_pass": 950.0,
+      "neg_review": 0.0,
+      "neg_fail": 0.0,
+      "recall_auto": 0.0,
+      "false_alarm_rate_auto": 0.0,
+      "feasible": true
+    },
+    "Fail everything": {
+      "cost_per_1000": 4750.0,
+      "error_cost_per_1000": 4750.0,
+      "review_cost_per_1000": 0.0,
+      "tp": 50.0,
+      "fn": 0.0,
+      "fp": 950.0,
+      "tn": 0.0,
+      "review_share": 0.0,
+      "reviews_per_day": 0.0,
+      "reviewers_needed": 0.0,
+      "pos_pass": 0.0,
+      "pos_review": 0.0,
+      "pos_fail": 50.0,
+      "neg_pass": 0.0,
+      "neg_review": 0.0,
+      "neg_fail": 950.0,
+      "recall_auto": 1.0,
+      "false_alarm_rate_auto": 1.0,
+      "feasible": true
+    },
+    "Person checks everything": {
+      "cost_per_1000": 208.33333333333334,
+      "error_cost_per_1000": 0.0,
+      "review_cost_per_1000": 208.33333333333334,
+      "tp": 50.0,
+      "fn": 0.0,
+      "fp": 0.0,
+      "tn": 950.0,
+      "review_share": 1.0,
+      "reviews_per_day": 1200.0,
+      "reviewers_needed": 2.0,
+      "pos_pass": 0.0,
+      "pos_review": 50.0,
+      "pos_fail": 0.0,
+      "neg_pass": 0.0,
+      "neg_review": 950.0,
+      "neg_fail": 0.0,
+      "recall_auto": 0.0,
+      "false_alarm_rate_auto": 0.0,
+      "feasible": false
+    },
+    "Model alone (t=0.62)": {
+      "cost_per_1000": 483.59759431383276,
+      "error_cost_per_1000": 483.59759431383276,
+      "review_cost_per_1000": 0.0,
+      "tp": 37.096774193548384,
+      "fn": 12.903225806451612,
+      "fp": 32.20338983050849,
+      "tn": 917.7966101694915,
+      "review_share": 0.0,
+      "reviews_per_day": 0.0,
+      "reviewers_needed": 0.0,
+      "pos_pass": 12.903225806451612,
+      "pos_review": 0.0,
+      "pos_fail": 37.096774193548384,
+      "neg_pass": 917.7966101694915,
+      "neg_review": 0.0,
+      "neg_fail": 32.20338983050849,
+      "recall_auto": 0.7419354838709677,
+      "false_alarm_rate_auto": 0.03389830508474578,
+      "feasible": true
+    },
+    "Model + review (0.02-0.79)": {
+      "cost_per_1000": 146.07253508292325,
+      "error_cost_per_1000": 80.64516129032258,
+      "review_cost_per_1000": 65.42737379260069,
+      "tp": 46.7741935483871,
+      "fn": 3.225806451612903,
+      "fp": 0.0,
+      "tn": 950.0,
+      "review_share": 0.3140513942044833,
+      "reviews_per_day": 376.86167304538,
+      "reviewers_needed": 0.6281027884089666,
+      "pos_pass": 3.225806451612903,
+      "pos_review": 40.322580645161295,
+      "pos_fail": 6.451612903225806,
+      "neg_pass": 676.271186440678,
+      "neg_review": 273.728813559322,
+      "neg_fail": 0.0,
+      "recall_auto": 0.12903225806451613,
+      "false_alarm_rate_auto": 0.0,
+      "feasible": true
+    }
+  },
+  "zero_shot_alone": {
+    "threshold": 0.01,
+    "cost_per_1000": 1250.0,
+    "error_cost_per_1000": 1250.0,
+    "review_cost_per_1000": 0.0,
+    "tp": 0.0,
+    "fn": 50.0,
+    "fp": 0.0,
+    "tn": 950.0,
+    "review_share": 0.0,
+    "reviews_per_day": 0.0,
+    "reviewers_needed": 0.0,
+    "pos_pass": 50.0,
+    "pos_review": 0.0,
+    "pos_fail": 0.0,
+    "neg_pass": 950.0,
+    "neg_review": 0.0,
+    "neg_fail": 0.0,
+    "recall_auto": 0.0,
+    "false_alarm_rate_auto": 0.0
+  },
+  "trivial_majority": {
+    "predicts": "negative",
+    "cost_per_1000": 1250.0,
+    "error_cost_per_1000": 1250.0,
+    "review_cost_per_1000": 0.0,
+    "tp": 0.0,
+    "fn": 50.0,
+    "fp": 0.0,
+    "tn": 950.0,
+    "review_share": 0.0,
+    "reviews_per_day": 0.0,
+    "reviewers_needed": 0.0,
+    "pos_pass": 50.0,
+    "pos_review": 0.0,
+    "pos_fail": 0.0,
+    "neg_pass": 950.0,
+    "neg_review": 0.0,
+    "neg_fail": 0.0,
+    "recall_auto": 0.0,
+    "false_alarm_rate_auto": 0.0
+  },
+  "bootstrap": {
+    "resamples": 500,
+    "model_alone_cost_95ci": [
+      234.59990530303043,
+      777.2752967778405
+    ],
+    "model_review_cost_95ci": [
+      58.76696481456169,
+      271.0366474289898
+    ],
+    "best_threshold_95ci": [
+      0.27,
+      0.7
+    ]
+  },
+  "switch_points": [
+    {
+      "assumption": "base_rate",
+      "at_about": 0.9976311574844404,
+      "stated_value": 0.05,
+      "from": "Model + review",
+      "to": "Fail everything"
+    },
+    {
+      "assumption": "cost_fn",
+      "at_about": 0.39622329811527834,
+      "stated_value": 25.0,
+      "from": "Model alone",
+      "to": "Model + review"
+    },
+    {
+      "assumption": "cost_fn",
+      "at_about": 1577.3933612004842,
+      "stated_value": 25.0,
+      "from": "Model + review",
+      "to": "Fail everything"
+    },
+    {
+      "assumption": "cost_fp",
+      "at_about": 0.12559432157547898,
+      "stated_value": 5.0,
+      "from": "Fail everything",
+      "to": "Model alone"
+    },
+    {
+      "assumption": "cost_fp",
+      "at_about": 0.2233417960754815,
+      "stated_value": 5.0,
+      "from": "Model alone",
+      "to": "Model + review"
+    },
+    {
+      "assumption": "review_minutes",
+      "at_about": 7.062687723113777,
+      "stated_value": 0.5,
+      "from": "Model + review",
+      "to": "Model alone"
+    }
+  ],
+  "test_positive_share": 0.34444444444444444,
+  "test_images": 90
+}

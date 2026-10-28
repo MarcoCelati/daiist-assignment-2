@@ -1,0 +1,9 @@
+file,kind,image,image_score,true_classes
+missed_1.jpg,missed,ppe_0403_jpg.rf.25c367bbb13d7b456118e346b4f26925.jpg,0.0,"helmet, no-vest, person"
+missed_2.jpg,missed,ppe_0781_jpg.rf.c4f370f195cdf859b70f3db395c5c309.jpg,0.0,"helmet, no-vest, vest"
+missed_3.jpg,missed,ppe_0828_jpg.rf.a09bcee628512d6bb9a44fe2afd8b19f.jpg,0.0243,"helmet, no-helmet, no-vest, person, vest"
+missed_4.jpg,missed,ppe_0745_jpg.rf.cc01d794f1d65ff92ba4e06d7c2aa182.jpg,0.128,"helmet, no-helmet, no-vest, person, vest"
+missed_5.jpg,missed,ppe_0000_jpg.rf.12dba82119baadab649f2fb1fda2afff.jpg,0.3023,"helmet, no-vest, person"
+missed_6.jpg,missed,ppe_0120_jpg.rf.c1387f72418919f8597314f6ac59e47f.jpg,0.399,"helmet, no-vest, person"
+false_alarm_1.jpg,false_alarm,ppe_0126_jpg.rf.3d578fb21fd9030ac2bba6f93fa74f4a.jpg,0.7819,"helmet, person"
+false_alarm_2.jpg,false_alarm,ppe_0357_jpg.rf.050090d9456aba1025eed0758342caba.jpg,0.6991,"helmet, no-helmet, person"

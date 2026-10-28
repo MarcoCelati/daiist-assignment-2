@@ -42,24 +42,24 @@ LABEL_FAIL = "Fail"
 #    Justify every figure in REPORT.md: where it comes from, and the value at
 #    which your conclusion would change.
 # ---------------------------------------------------------------------------
-COST_FALSE_POSITIVE = 1.0  # TEMP placeholder: replace with your own estimate before the final run
-COST_FALSE_NEGATIVE = 1.0  # TEMP placeholder: replace with your own estimate before the final run
+COST_FALSE_POSITIVE = 5.0   # officer walks over to a worker who was wearing a vest
+COST_FALSE_NEGATIVE = 25.0  # expected fine + accident cost of an unflagged violation
 COST_TRUE_POSITIVE = 0.0    # a positive case caught (e.g. rework cost); 0 if none
 COST_TRUE_NEGATIVE = 0.0    # a negative case passed; usually 0
 
 # How often the positive class actually occurs in production, as a fraction
 # (0.02 means 2 in 100 cases). This is NOT the share of positives in the test
 # split, which is usually far higher. Costs are reweighted to this rate.
-BASE_RATE = 0.5  # TEMP placeholder: replace with your own estimate before the final run
+BASE_RATE = 0.05  # 5% of site images show a worker without a vest
 
 # ---------------------------------------------------------------------------
 # 4. Human review (README step 7).
 # ---------------------------------------------------------------------------
-DAILY_VOLUME = 1  # TEMP placeholder: replace with your own estimate before the final run
-REVIEW_MINUTES_PER_CASE = 1.0  # TEMP placeholder: replace with your own estimate before the final run
-REVIEWER_HOURLY_COST = 1.0  # TEMP placeholder: replace with your own estimate before the final run
-REVIEWER_PRODUCTIVE_HOURS_PER_DAY = 1.0  # TEMP placeholder: replace with your own estimate before the final run
-REVIEWERS_AVAILABLE = 1  # TEMP placeholder: replace with your own estimate before the final run
+DAILY_VOLUME = 5 * 30 * 8              # 5 cameras x 30 images/hour x 8 hours = 1,200
+REVIEW_MINUTES_PER_CASE = 0.5
+REVIEWER_HOURLY_COST = 25.0
+REVIEWER_PRODUCTIVE_HOURS_PER_DAY = 5.0
+REVIEWERS_AVAILABLE = 1  # one safety officer who also has other duties
 
 # Reviewers make mistakes too. 0.0 means "a person is always right", which is
 # itself an assumption you should be able to defend.

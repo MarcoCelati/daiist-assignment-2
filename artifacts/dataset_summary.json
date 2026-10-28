@@ -1,0 +1,39 @@
+{
+  "classes": [
+    "helmet",
+    "no-helmet",
+    "no-vest",
+    "person",
+    "vest"
+  ],
+  "positive_classes": [
+    "no-vest"
+  ],
+  "splits": {
+    "train": {
+      "images": 997,
+      "images_without_objects": 0,
+      "positive_images": 390,
+      "positive_image_share": 0.39117352056168503,
+      "instances": 6386
+    },
+    "val": {
+      "images": 119,
+      "images_without_objects": 0,
+      "positive_images": 52,
+      "positive_image_share": 0.4369747899159664,
+      "instances": 715
+    },
+    "test": {
+      "images": 90,
+      "images_without_objects": 0,
+      "positive_images": 31,
+      "positive_image_share": 0.34444444444444444,
+      "instances": 623
+    }
+  },
+  "image_resolutions": {
+    "640x640": 1206
+  },
+  "distinct_resolutions": 1
+}
