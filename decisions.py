@@ -20,9 +20,9 @@ re-run the costing on your committed weights without retraining:
 #    https://universe.roboflow.com/<workspace>/<project>/dataset/<version>
 #    Use the public dataset as it is. Do not fork it.
 # ---------------------------------------------------------------------------
-ROBOFLOW_WORKSPACE = None   # e.g. "some-workspace"
-ROBOFLOW_PROJECT = None     # e.g. "some-project"
-ROBOFLOW_VERSION = None     # e.g. 3  (an int)
+ROBOFLOW_WORKSPACE = "roboflow-100"
+ROBOFLOW_PROJECT = "construction-safety-gsnvb"
+ROBOFLOW_VERSION = 1
 
 # ---------------------------------------------------------------------------
 # 2. What counts as a "positive" case (README step 5).
@@ -30,7 +30,7 @@ ROBOFLOW_VERSION = None     # e.g. 3  (an int)
 #    object of any class listed here. Spell names exactly as in the dataset.
 #    Positive = the thing you want to catch, which the model routes to FAIL.
 # ---------------------------------------------------------------------------
-POSITIVE_CLASSES = None     # e.g. ["defect"]
+POSITIVE_CLASSES = ["no-vest"]
 
 # What each outcome is called in your business. Purely cosmetic.
 LABEL_PASS = "Pass"
@@ -42,24 +42,24 @@ LABEL_FAIL = "Fail"
 #    Justify every figure in REPORT.md: where it comes from, and the value at
 #    which your conclusion would change.
 # ---------------------------------------------------------------------------
-COST_FALSE_POSITIVE = None  # a negative case sent to FAIL
-COST_FALSE_NEGATIVE = None  # a positive case sent to PASS
+COST_FALSE_POSITIVE = 1.0  # TEMP placeholder: replace with your own estimate before the final run
+COST_FALSE_NEGATIVE = 1.0  # TEMP placeholder: replace with your own estimate before the final run
 COST_TRUE_POSITIVE = 0.0    # a positive case caught (e.g. rework cost); 0 if none
 COST_TRUE_NEGATIVE = 0.0    # a negative case passed; usually 0
 
 # How often the positive class actually occurs in production, as a fraction
 # (0.02 means 2 in 100 cases). This is NOT the share of positives in the test
 # split, which is usually far higher. Costs are reweighted to this rate.
-BASE_RATE = None
+BASE_RATE = 0.5  # TEMP placeholder: replace with your own estimate before the final run
 
 # ---------------------------------------------------------------------------
 # 4. Human review (README step 7).
 # ---------------------------------------------------------------------------
-DAILY_VOLUME = None                   # cases per day the process handles
-REVIEW_MINUTES_PER_CASE = None        # time for a person to check one case
-REVIEWER_HOURLY_COST = None           # fully loaded euros per hour
-REVIEWER_PRODUCTIVE_HOURS_PER_DAY = None  # hours of actual checking per shift
-REVIEWERS_AVAILABLE = None            # people you can realistically assign
+DAILY_VOLUME = 1  # TEMP placeholder: replace with your own estimate before the final run
+REVIEW_MINUTES_PER_CASE = 1.0  # TEMP placeholder: replace with your own estimate before the final run
+REVIEWER_HOURLY_COST = 1.0  # TEMP placeholder: replace with your own estimate before the final run
+REVIEWER_PRODUCTIVE_HOURS_PER_DAY = 1.0  # TEMP placeholder: replace with your own estimate before the final run
+REVIEWERS_AVAILABLE = 1  # TEMP placeholder: replace with your own estimate before the final run
 
 # Reviewers make mistakes too. 0.0 means "a person is always right", which is
 # itself an assumption you should be able to defend.
@@ -80,7 +80,7 @@ REVIEW_BAND_OVERRIDE = None      # (low, high): below low -> pass, at/above high
 #    {"person": "worker"}. Leave {} if none match: then the zero-shot model
 #    can never find your classes, and reporting that is a valid finding.
 # ---------------------------------------------------------------------------
-COCO_TO_DATASET = {}
+COCO_TO_DATASET = {"person": "person"}  # COCO's "person" means the same as the dataset's "person"
 
 # ---------------------------------------------------------------------------
 # 7. Training settings. Record where you trained and these values in REPORT.md.
