@@ -14,3 +14,7 @@ runs/
 
 # Never commit your API key
 .env
+
+# Pretrained checkpoints Ultralytics downloads into the repo root (yolo11n.pt etc.).
+# Only weights/best.pt, your finetuned model, gets committed.
+/*.pt
